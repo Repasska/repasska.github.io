@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+---
+
+    <div class="content">
+      <div class="container">
+        <h2 class="spacing">Blog</h2>
+		<h3>Kategórie:</h3>
+        <div class="blog-posts">
+          {% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+        </div>
+      </div>
+    </div>

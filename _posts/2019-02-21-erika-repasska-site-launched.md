@@ -1,7 +1,14 @@
 ---
 layout: post
-title: "Erika Repasska, Launches Site"
+title: "Erika spúšťa web"
 date: 2019-02-21
+categories: [informatika]
 ---
 
-Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+Prvé stretnutie s Jekkylom - bude z toho kamarátstvo?
+
+Text tu.
+
+Text tam.
+
+1 2 3 4 5 6 7 8 9

@@ -1,0 +1,32 @@
+---
+layout: default
+title: DevProfile
+---
+
+    <div class="content">
+      <section class="hero3">
+      </section>
+	  
+	   <div class="small-container">
+
+		<h4>Jazyky, s ktorými som sa stretla počas štúdia:</h4>
+				{% for member in site.data.lang %}
+			| {{ member.jazyk }} 
+			
+				{% endfor %} |
+				
+			<p><img src="/images/school.png" width="430" alt="Boulder"></p>
+
+      </div>
+	  
+	  
+      <div class="small-container">
+
+		<h4>Prehľad zaujímavých projektov riešených počas štúdia</h4>
+				{% for member in site.data.fav %}
+			<h5> {{ member.predmet }} </h5> <p>{{ member.projekty }}.</p>
+			
+				{% endfor %}
+
+      </div>
+    </div>
