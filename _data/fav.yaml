@@ -1,11 +1,17 @@
+- predmet: Bakalárska práca
+  projekty: Navrhnutie metódy transformácie vyhľadávania v prirodzenom jazyku na štruktúrované vyhľadávanie, za využitia n-gramov a fuzzy párovania (implementované v Pythone) 
+
 - predmet: Princípy softvérového inžinierstva
-  projekty: Analýza a návrh softvéru pre projekt Food saving
+  projekty: Analýza a návrh softvéru pre projekt Food saving v Sparx Enterprise Architect
+  
+  - predmet: Modelovanie softvéru
+  projekty: Modelovanie navrhovaného softvéru (na rôznych úrovniach vývoja príslušnými modelmi) v Sparx Enterprise Architect, riešiaceho Centrálnu evidenciu spoločenských zvierat
 
 - predmet: Interakcia človeka s počítačom
-  projekty: Dizajnovanie webu pre Online sťahovanie, hľadiac na aspekty použiteľnosti
+  projekty: Dizajnovanie webu pre Online sťahovanie, hľadiac na aspekty použiteľnosti, za využitia Axure RP a iných prototypovacích či wireframeovacích toolov
 
 - predmet: Inteligentná analýza údajov
-  projekty: Exploratívna analýza, predspracovanie dát a natrénovanie modelu na predikciu závislej premennej v medicínskej doméne
+  projekty: Exploratívna analýza, predspracovanie dát a natrénovanie modelu na predikciu závislej premennej v medicínskej doméne - za využitia Pythonu a Jupyter Notebooku
 
 - predmet: Princípy počítačovej grafiky a spracovania obrazu
   projekty: Vytvorenie vlastnej 3D hry v C++ a OpenGL, v mojom prípade 3x3x3 Piškvorky
@@ -14,13 +20,13 @@
   projekty: Riešenie hlavolamov, produkčný systém, využívanie evolučných algoritmov (hľadač pokladov)
 
 - predmet: Databázové systémy
-  projekty: Vytvorenie databázy zodpovedajúcej štruktúry s 50+ miliónmi záznamov a aplikácie s grafickým používateľským rozhraním, ktorá s týmito dátami pracovala
+  projekty: Vytvorenie databázy zodpovedajúcej štruktúry s 50+ miliónmi záznamov a aplikácie s grafickým používateľským rozhraním, ktorá s týmito dátami pracovala - za využitia PostgreSQL, Javy a JavyFX
 
 - predmet: Vývoj aplikácií s viac-vrstvovou architektúrou
-  projekty: So spolužiačkou sme pracovali na vývoji Android aplikácie pre paraglidistov, ktorá zobrazovala na mape štartovačky spolu s ich charakteristikami a taktiež zobrazovala počasie pre danú lokalitu
+  projekty: So spolužiačkou sme pracovali na vývoji Android aplikácie pre paraglidistov, ktorá zobrazovala na mape štartovačky spolu s ich charakteristikami a taktiež zobrazovala počasie pre danú lokalitu - riešenie back-endu v PHP
 
 - predmet: Objektovo-orientované programovanie
-  projekty: Vytvorenie aplikácie s grafickým používateľským rozhraním pre simulovanie e-shopu s raňajkovými cereáliami
+  projekty: Vytvorenie aplikácie s grafickým používateľským rozhraním pre simulovanie e-shopu s raňajkovými cereáliami - v Java, JavaFX
 
 - predmet: Dátové štruktúry a algoritmy
   projekty: Vlastná implementácia štruktúr ako sú napríklad binárne stromy, spájané zoznamy, atď. a taktiež algoritmov ako A*, Dijkstra, hashovanie, a iné
@@ -32,4 +38,4 @@
   projekty: Vytváranie skriptov v jazyku C-shell
 
 - predmet: Počítačové a komunikačné siete
-  projekty: Vytvorenie analyzátora sieťovej komunikácie a sieťového komunikátora nad protokolom UDP transportnej vrstvy sieťového modelu TCP/IP
+  projekty: Vytvorenie analyzátora sieťovej komunikácie a sieťového komunikátora nad protokolom UDP transportnej vrstvy sieťového modelu TCP/IP - v C/C++
