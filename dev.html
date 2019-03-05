@@ -1,32 +1,36 @@
----
-layout: default
+--- 
+layout: default 
 title: DevProfile
 ---
 
-    <div class="content">
-      <section class="hero3">
-      </section>
-	  
-	   <div class="small-container">
+<div class="content">
+    <section class="hero3">
+    </section>
+    <div class="container">
+        <div class="columns spacing">
+            <div class="column half">
+                <h3>Programovacie jazyky</h3>
+                <p> Jazyky, s ktorými som sa stretla počas štúdia:
+                    <ul>
+                        {% for member in site.data.lang %}
+                        <li>{{ member.jazyk }} </li>
 
-		<h4>Jazyky, s ktorými som sa stretla počas štúdia:</h4>
-				{% for member in site.data.lang %}
-			| {{ member.jazyk }} 
-			
-				{% endfor %} |
-				
-			<p><img src="/images/school.png" width="430" alt="Boulder"></p>
+                        {% endfor %}
+                    </ul>
+                </p>
+            </div>
+            <div class="column half">
+                <img src="/images/school.png" width="430" alt="Me">
+            </div>
+        </div>
 
-      </div>
-	  
-	  
-      <div class="small-container">
+        <div class="small-container">
 
-		<h4>Prehľad zaujímavých projektov riešených počas štúdia</h4>
-				{% for member in site.data.fav %}
-			<h5> {{ member.predmet }} </h5> <p>{{ member.projekty }}.</p>
-			
-				{% endfor %}
+            <h4>Prehľad zaujímavých projektov riešených počas štúdia</h4> {% for member in site.data.fav %}
+            <h5> {{ member.predmet }} </h5>
+            <p>{{ member.projekty }}.</p>
 
-      </div>
+            {% endfor %}
+        </div>
     </div>
+</div>

@@ -2,10 +2,10 @@
 layout: default
 ---
 <div class="container">
-  <h2 class="spacing">{{ page.title }}</h2>
-
   <div class="blog-post spacing">
-    <p class="summary">{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></p>
+    <h3 class="spacing">{{ page.title }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></h3>
+	<h4>Tagy: {% for member in page.tags %} | {{ member }}{% endfor %} | </h4>
+    <p class="summary">{{ page.category }}</p>
     {{ content }}
   </div>
 </div>
