@@ -4,6 +4,8 @@ title: "Hrebeňom Veľkej Fatry na skialpoch"
 date: 2018-12-18
 categories: [Hory]
 tags: [skialp, Veľká Fatra, zima, hrebeňovka]
+author: Erika
+link: http://ataksichodim.blogspot.com/2018/12/z-dennicka-spomienok-zimna-hrebenovka.html
 ---
 
 Z Tureckej do Ružomberka na skialpoch za 3 dni. Nakoľko som po telefonickej komunikácii zistila, že Donovaly ani Ružomberok nemajú na tento čas na požičanie žiadne skialpy, museli sme si urobiť zachádzku až do Vrátnej doliny v Malej Fatre. V praxi to vyzeralo takto - budíček niečo po štvrej hodine rannej, aby sme o piatej vyrážali z Bratislavy a pred ôsmou vedeli byť vo Vrátnej. Odtiaľ sme sa presunuli na náš štart do Tureckej. Cieľ sme mali v Ružomberku, prvú noc naplanovanú na Chyžkách a druhú v hoteli Granit.

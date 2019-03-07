@@ -3,9 +3,11 @@ layout: default
 ---
 <div class="container">
   <div class="blog-post spacing">
-    <h3 class="spacing">{{ page.title }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></h3>
-	<h4>Tagy: {% for member in page.tags %} | {{ member }}{% endfor %} | </h4>
+    <h4 class="spacing">{{ page.title }}<span class="date">Vytvorené: {{ page.date | date: '%d.%m.%Y' }}</span></h4>
+	<h5>Tagy: {% for member in page.tags %} | {{ member }}{% endfor %} | </h5>
     <p class="summary">{{ page.category }}</p>
     {{ content }}
+	
+	<i>Autor: {{ page.author }}, odkaz na originál blog <a href="{{ page.link }}">TU</a>.</i>
   </div>
 </div>
