@@ -40,7 +40,6 @@ Tretí deň už telíčko celkom bolelo. Hlavne teda nohy otlačené od nie naji
 ![:)](https://1.bp.blogspot.com/-esyaVBy2QY0/XBjVu27CCCI/AAAAAAAAC38/-UvaiZVNdSAh7NTqRifCoR3PhqV8PGSJgCLcBGAs/s1600/GOPR0569.jpg ":)")
 ![Blížime sa k Ružomberku](https://1.bp.blogspot.com/-J1z-DoPOWvs/XBjVwOdEWHI/AAAAAAAAC4I/qDta8P5ryCc3YvvsBKN2S9IhsivP29lyACLcBGAs/s1600/GOPR0572.jpg "Blížime sa k Ružomberku")
 ![S Tatrami v pozadí](https://3.bp.blogspot.com/-8LyeZePtwYM/XBjVv2VQLTI/AAAAAAAAC4E/9a-V9j22Dnk2Q5g-Owpmjkfp2yU7folrwCLcBGAs/s1600/GOPR0575.jpg "S Tatrami v pozadí")
-![Zima](https://4.bp.blogspot.com/-3SJemyP8hZ4/XBjSKChpklI/AAAAAAAAC3I/Rv7kU3UoqHYl67dVWSj8KI6ocF32UqdrgCLcBGAs/s1600/GOPR0507.jpg "Zima")
 
 #### Záver
 
