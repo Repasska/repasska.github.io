@@ -1,0 +1,6 @@
+name: Erika Repasska
+markdown: kramdown
+
+gems:
+ - jekyll-auto-image
+
