@@ -1,0 +1,48 @@
+- nazov: Zadanie 1
+  body:
+     - nazov: Sídlo musí obsahovať aspoň 5 podstránok
+       text: 
+          - bod: Aktuálne webové sídlo obsahuje uvítaciu stránku, 5 podstránok menu (Domov, O mne, DevProfile, WPUB a Blog) a na samotnom blogu sa nachádza 7 článkov.
+     - nazov: Využitie aspoň 3 rôznych rozložení (layout-ov) + ich opis
+       text: 
+          - bod: Momentálne využívam presne 3 layouty - jeden na úvodnú stránku (welcome), jeden pre podstránky zobrazené v menu - Domov, O mne, DevProfile, WPUB a Blog (default) a jeden pre články blogu (post).
+          - bod: Welcome layout - vytvorený pre účely minimalistickosti - neobsahuje navigáciu, je tvorený len full-screenovým obrázkom, nadpisom a button-om pre vstup.
+          - bod: Default layout - obsahuje navigáciu v menu v hornej lište a taktiež svoj footer, je relatívne dobre customizovateľný.
+          - bod: Post layout - má špecifické rozloženie obsahu, typické pre články a teda - na vrchu sa nachádza názov článku (zarovnaným na ľavú stranu) spolu s dátumom vytvorenia (ten je zarovnaný na pravú stranu). Medzi samotným obsahom a názvom sa nachádzajú tagy - kľúčové slová daného článku. Nasleduje obsahu, za ktorým sa na konci vypíše, kto článok napísal (autor) a pripojí sa odkaz na pôvodný článok (z môjho osobného blogu). Tento layout dedí od defaultného, takže vidíme typické prvky - navigáciu v hornej lište a footer.
+     - nazov: Použitie aspoň 5 premenných
+       text:
+          - bod: Články (posty) blogu obsahujú 6 custom premenných, v ktorých si pamätám názov článku, dátum vytvorenia, kategórie, do ktorých patrí, ďalej tagy (čo sa v článku vyskytuje, "kľúčové slová"), autora článku a odkaz na jeho pôvodnú verziu (ak je zverejnený ešte niekde inde, prípadne v inej verzii). Využívam ich v layoute post - page.title, page.date, page.tags, page.author, page.link.
+          - bod: Taktiež používam aj premenné sídla (site variables), napríklad site.categories (kategórie, ktoré sú pridelené článkom na blogu) v cykle pre výpis článkov blogu podľa kategórií.
+          - bod: Pre výpis dát vo formáte .csv alebo .yaml zase site.data.nazov_suboru (v mojom prípade súbory s programovacími jazykmi, projektami riešenými v škole, informáciami o mne a dokumentácii z webového publikovania). 
+          - bod: Pri premenných stránky (page variables) zas používam klasicky page.title na výpis názvu stránky. 
+          - bod: Pre výpis článkov v blogu používam aj post.excerpt na vyňatie ukážky textu z blogu a post.image na náhľad prvého obrázku článku. 
+          - bod: Pri iterovaní dátovými súbormi (pri ich výpise) zas používam premenné member.nazov, member.text a member.obrazok na stránke O mne. Ďalej premenné member.jazyk, member.predmet a member.projekty na stránke DevProfile. A na stránke WPUB zas zadanie.nazov, bod.nazov a bod.text.
+          - bod: Vďaka použitému plugin-u viem pristupovať aj k prvej fotografii článku blogu cez premennú {{ post.image }} (pri vypisovaní článkov podľa kategórií).
+     - nazov: Použitie kolekcií alebo dátových súborov
+       text:
+          - bod: Vo svojom riešení využívam 3 súbory vo formáte .yaml a to informácie o mne (obsahujú názov kapitoly, text a obrázok), informácie o projektoch riešených na jednotlivých predmetoch (obsahujú názov predmetu a text s riešenými projektami) a dokumentácia k webovému publikovaniu - práve tento súbor - ktorý dokonca obsahuje aj vnorené hodnoty do dvoch úrovní (zadanie má svoje body a splnenie tých bodov je popísané textom rozdeleným do viacerých bodov).
+          - bod: Taktiež pracujem aj so súborom vo formáte .csv, v ktorom si pamätám informácie o ovládaných programovacích jazykoch. Nakoľko tento súbor nepotreboval byť špeciálne štruktúrovaný, postačilo použitie .csv formátu.
+     - nazov: Použitie aspoň 5 filtrov alebo tagov
+       text:
+          - bod: Klasickými tagmi, ktoré najčastejšie používam, sú tie, ktorý vyznačujú for-cykly a v mojom riešení ich používam na 4 rôznych miestach {% for member in site.data.nazov_suboru %} //doSomething {% endfor %}. Cykly používam pri všetkych výpisoch dát, takže v tomto projekte pri vypisovaní informácií o mne, o školských projektoch, o dokumentácií z WPUB a o programovacích jazykoch. V prípade vnorených štruktúr pracujem aj s vnorenými for-cyklami (pochopiteľne).
+          - bod: Využívam aj nasledovné tagy na zistenie párnej / nepárnej iterácie cyklu {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}, nakoľko na stránke O mne chcem striedavo vymieňať obsah stĺpcov - raz fotka naľavo a text napravo a raz text naľavo a fotka napravo.
+          - bod: Pracujem aj s podmienkou {% if thecycle == 'odd' %} //doSomething {% else %} //doSomethingElse {% endif %}, aby som vedela zameniť rozloženie stránky (pozíciu fotky a textu) - viď. predchádzajúci bod.
+          - bod: "Z filtrov využívam samozrejme formátovanie dátumu {{ post.date | date: '%d.%m.%Y' }}."
+          - bod: "Ďalším filtrom, ktorý používam, je {{ post.excerpt | truncate: 200 }} - ten oreže snippet článku blogu v prípade, že obsahuje viac ako 200 slov."
+     - nazov: Použitie aspoň jedného plugin-u
+       text:
+          - bod: "Využívam plugin jekyll-auto-image, ktorý má na starosti to, že vyberie prvú fotku z článku blogu a použije ju ako náhľad. Pri výpise článkov podľa kategórií tak stačí jednoducho pristúpiť k tejto fotke cez premennú {{ post.image }} a náhľad fotky sa zobrazí k snippetu článku. Inštrukcie k jeho inštalácii a použitiu sú dostupné tu: https://github.com/merlos/jekyll-auto-image."
+     - nazov: Použité štýly
+       text:
+          - bod: "Používam predovštkým CSS štýly, ktoré sú zadefinované v style.css. Taktiež používam Google Fonts pre využívanie nadštandarných fontov. Kvôli buttonu na úvodnej stránke som použila aj Bootstrap 4.1.0. Nakoľko som s vytváraním webov nemala doteraz absolútne žiadnu skúsenosť, postupovala som v začiatkoch podľa tohto tutoriálu: https://css-tricks.com/building-a-jekyll-site-part-1-of-3/."
+- nazov: Zadanie 2
+  body:
+     - nazov: "Dokumentácia k 2. zadaniu"
+       text:
+          - bod: "To be continued... :)"
+- nazov: Zadanie 3
+  body:
+     - nazov: "Dokumentácia k 3. zadaniu"
+       text:
+          - bod: "To be continued... ;)"
+     
