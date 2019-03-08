@@ -7,11 +7,9 @@ title: Blog
     <section class="hero5">
     </section>
     <div class="container">
-        <div class="blog-posts">
             {% for category in site.categories %}
             <h3>{{ category[0] }}</h3> {% for post in category[1] %}
-
-            <div class="columns spacing">
+            <div class="columns">
                 <div class="column half">
                     <h5> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> » {{ post.date | date: '%d.%m.%Y' }} </h5>
                     <p> {{ post.excerpt | truncate: 200 }} </p>
@@ -20,8 +18,8 @@ title: Blog
                     <img src="{{ post.image }}" width="300" height="300">
                 </div>
             </div>
-
-            {% endfor %} {% endfor %}
-        </div>
+			<hr>
+            {% endfor %} 
+			{% endfor %}
     </div>
 </div>

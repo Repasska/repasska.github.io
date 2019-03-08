@@ -39,10 +39,10 @@
   body:
      - nazov: "Dokumentácia k 2. zadaniu"
        text:
-          - bod: "To be continued... :)"
+          - bod: "To be continued :)"
 - nazov: Zadanie 3
   body:
      - nazov: "Dokumentácia k 3. zadaniu"
        text:
-          - bod: "To be continued... ;)"
+          - bod: "To be continued :)"
      
