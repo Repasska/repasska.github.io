@@ -1,16 +1,30 @@
 <!doctype html>
 <html lang="sk">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
     <div class="content">
-			{{ content }}
-      </div>
-    </footer>
-  </body>
+        <section class="heroW">
+            <div class="container">
+                <div class="columns spacing">
+                    <h1>{{ page.header }}</h1>
+                </div>
+                <div class="columns spacing">
+                    <a href="/home.html" class="btn btn-outline-light btn-lg align-self-center" role="button">{{ page.button }}</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
 </html>

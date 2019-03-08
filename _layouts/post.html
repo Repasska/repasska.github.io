@@ -5,9 +5,7 @@ layout: default
   <div class="blog-post spacing">
     <h4 class="spacing">{{ page.title }}<span class="date">Vytvorené: {{ page.date | date: '%d.%m.%Y' }}</span></h4>
 	<h5>Tagy: {% for member in page.tags %} | {{ member }}{% endfor %} | </h5>
-    <p class="summary">{{ page.category }}</p>
-    {{ content }}
-	
+    <p>{{ content }}</p>
 	<i>Autor: {{ page.author }}, odkaz na originál blog <a href="{{ page.link }}">TU</a>.</i>
   </div>
 </div>

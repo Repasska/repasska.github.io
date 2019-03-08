@@ -3,10 +3,21 @@ layout: default
 title: WPUB
 ---
 
-    <div class="content">
-	<section class="hero4">
-      </section>
-      <div class="container">
-        <p class="post-hero center-text spacing"><strong>TU</strong> sa budú nachádzať veci ohľadom Webového publikovania.</p>
-      </div>
+<div class="content">
+    <section class="hero4">
+    </section>
+    <div class="container">		
+		{% for zadanie in site.data.wpub %}
+            <h3> {{ zadanie.nazov }} </h3> 	
+			{% for bod in zadanie.body %}
+				<h5>{{ bod.nazov }}</h5>
+				<ul>
+					{% for bod2 in bod.text %}
+					<li>{{ bod2.bod }}</li>
+					{% endfor %}
+            </ul>
+            {% endfor %} 
+			<hr>
+		{% endfor %}
     </div>
+</div>

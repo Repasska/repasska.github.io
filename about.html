@@ -7,9 +7,6 @@ title: O mne
       <section class="hero2">
       </section>
       <div class="container">
-        <p class="post-hero center-text spacing">Zdravím ťa, <strong>náhodný okoloidúci!</strong> Tu sa môžeš dočítať niečo málo o mne :-) </p>
-      </div>
-      <div class="container">
 			{% for member in site.data.about %} {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %} {% if thecycle == 'odd' %}
 
 			<div class="columns spacing">
@@ -37,14 +34,19 @@ title: O mne
 			{% endif %} {% endfor %}
 
 		 <div class="columns spacing">
-          <div class="column half">
+          <div class="column third">
             <img src="/images/climb3.jpg" width="430" alt="Boulder">
+			<p></p>
 			 <img src="/images/horses.jpg" width="430" alt="Boulder">
-			 <img src="/images/climb2.jpg" width="430" alt="Boulder">
           </div>
-          <div class="column half">
+          <div class="column third">
             <img src="/images/ferrata.jpg" width="430" alt="Boulder">
+			<p></p>
 			<img src="/images/climb1.jpg" width="430" alt="Boulder">
+          </div>
+		  <div class="column third">
+			 <img src="/images/climb2.jpg" width="430" alt="Boulder">
+			 <p></p>
 			 <img src="/images/hook2.jpg" width="430" alt="Boulder">
           </div>
         </div>
