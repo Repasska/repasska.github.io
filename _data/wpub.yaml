@@ -34,7 +34,7 @@
           - bod: "Využívam plugin jekyll-auto-image, ktorý má na starosti to, že vyberie prvú fotku z článku blogu a použije ju ako náhľad. Pri výpise článkov podľa kategórií tak stačí jednoducho pristúpiť k tejto fotke cez premennú {{ post.image }} a náhľad fotky sa zobrazí k snippetu článku. Inštrukcie k jeho inštalácii a použitiu sú dostupné tu: https://github.com/merlos/jekyll-auto-image."
      - nazov: Použité štýly
        text:
-          - bod: "Používam predovštkým CSS štýly, ktoré sú zadefinované v style.css. Taktiež používam Google Fonts pre využívanie nadštandarných fontov. Kvôli buttonu na úvodnej stránke som použila aj Bootstrap 4.1.0. Nakoľko som s vytváraním webov nemala doteraz absolútne žiadnu skúsenosť, postupovala som v začiatkoch podľa tohto tutoriálu: https://css-tricks.com/building-a-jekyll-site-part-1-of-3/."
+          - bod: "Používam predovštkým CSS štýly, ktoré sú zadefinované v style.css. Kvôli buttonu na úvodnej stránke som použila aj Bootstrap 4.1.0. Nakoľko som s vytváraním webov nemala doteraz absolútne žiadnu skúsenosť, postupovala som v začiatkoch podľa tohto tutoriálu: https://css-tricks.com/building-a-jekyll-site-part-1-of-3/."
 - nazov: Zadanie 2
   body:
      - nazov: "Dokumentácia k 2. zadaniu"
