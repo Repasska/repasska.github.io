@@ -1,6 +1,21 @@
----
-layout: default
----
+<!doctype html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+  <body>
+  
+  <div class="topnav">
+		  <a href="/home.html">Domov</a>
+		  <a href="/about.html">O mne</a>
+		  <a href="/dev.html">DevProfile</a>
+		  <a href="/wpub.html">WPUB</a>
+		  <a href="/blog.html">Blog</a>
+		</div>
+  
 <div class="container">
   <div class="blog-post spacing">
     <h4 class="spacing">{{ page.title }}<span class="date">Vytvorené: {{ page.date | date: '%d.%m.%Y' }}</span></h4>
@@ -9,3 +24,11 @@ layout: default
 	<i>Autor: {{ page.author }}, odkaz na originál blog <a href="{{ page.link }}">TU</a>.</i>
   </div>
 </div>
+	  
+	  <footer>
+      <div class="container">
+        <p class="center-text"><a href="http://ataksichodim.blogspot.com/">Erika | 2019</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
