@@ -9,25 +9,18 @@
   <body>
 	  <section class="{{ page.hero }}">
 		 <div class="topnav">
-		  <a href="/home.html">Domov</a>
 		  <a href="/about.html">O mne</a>
 		  <a href="/dev.html">DevProfile</a>
 		  <a href="/wpub.html">WPUB</a>
 		  <a href="/blog.html">Blog</a>
 		</div>
 	 </section>
-	 
-	 {% if page.hero != "hero1" %}
 	 <div class="gradient"></div>
-	 {% endif %}
-	 
-    <div class="content">
+      <div class="content">
 			{{ content }}
       </div>
 	  <footer>
-      <div class="container">
-        <p class="center-text"><a href="http://ataksichodim.blogspot.com/">Erika Repašská | 2019</a></p>
-      </div>
-    </footer>
+		<a href="http://ataksichodim.blogspot.com/">Erika Repašská | 2019</a>
+      </footer>
   </body>
 </html>

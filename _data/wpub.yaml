@@ -2,10 +2,10 @@
   body:
      - nazov: Sídlo musí obsahovať aspoň 5 podstránok
        text: 
-          - bod: Aktuálne webové sídlo obsahuje uvítaciu stránku, 5 podstránok menu (Domov, O mne, DevProfile, WPUB a Blog) a na samotnom blogu sa nachádza 7 článkov.
+          - bod: Aktuálne webové sídlo obsahuje uvítaciu stránku, 4 podstránky menu (O mne, DevProfile, WPUB a Blog) a na samotnom blogu sa nachádza 7 článkov.
      - nazov: Využitie aspoň 3 rôznych rozložení (layout-ov) + ich opis
        text: 
-          - bod: Momentálne využívam presne 3 layouty - jeden na úvodnú stránku (welcome), jeden pre podstránky zobrazené v menu - Domov, O mne, DevProfile, WPUB a Blog (default) a jeden pre články blogu (post).
+          - bod: Momentálne využívam presne 3 layouty - jeden na úvodnú stránku (welcome), jeden pre podstránky zobrazené v menu - O mne, DevProfile, WPUB a Blog (default) a jeden pre články blogu (post).
           - bod: Welcome layout - vytvorený pre účely minimalistickosti - neobsahuje navigáciu, je tvorený len full-screenovým obrázkom, nadpisom a button-om pre vstup.
           - bod: Default layout - obsahuje navigáciu v menu v hornej lište, background obrázok s gradientom (pre plynulý prechod "do stratena") a taktiež svoj footer. Je relatívne dobre customizovateľný.
           - bod: Post layout - má špecifické rozloženie obsahu, typické pre články a teda - na vrchu sa nachádza názov článku (zarovnaný na ľavú stranu) spolu s dátumom vytvorenia (ten je zarovnaný na pravú stranu). Medzi samotným obsahom a názvom sa nachádzajú tagy - kľúčové slová daného článku. Nasleduje obsahu, za ktorým sa na konci vypíše, kto článok napísal (autor) a pripojí sa odkaz na pôvodný článok (z môjho osobného blogu).
@@ -30,7 +30,6 @@
           - bod: Pracujem aj s podmienkou {% if thecycle == 'odd' %} //doSomething {% else %} //doSomethingElse {% endif %}, aby som vedela zameniť rozloženie stránky (pozíciu fotky a textu) - viď. predchádzajúci bod.
           - bod: "Z filtrov využívam samozrejme formátovanie dátumu {{ post.date | date: '%d.%m.%Y' }}."
           - bod: "Ďalším filtrom, ktorý používam, je {{ post.excerpt | truncate: 200 }} - ten oreže snippet článku blogu v prípade, že obsahuje viac ako 200 slov."
-          - bod: Nakoľko nechcem nastavovať gradient fullscreenovému obrázku na stránke Domov, tak používam podmienku, ktorá to ošetruje {% if page.hero != "hero1" %} //nenastavGradient {% endif %}.
      - nazov: Použitie aspoň jedného plugin-u
        text:
           - bod: "Využívam plugin jekyll-auto-image, ktorý má na starosti to, že vyberie prvú fotku z článku blogu a použije ju ako náhľad. Pri výpise článkov podľa kategórií tak stačí jednoducho pristúpiť k tejto fotke cez premennú {{ post.image }} a náhľad fotky sa zobrazí k snippetu článku. Inštrukcie k jeho inštalácii a použitiu sú dostupné tu: https://github.com/merlos/jekyll-auto-image."

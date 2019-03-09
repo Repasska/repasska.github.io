@@ -8,7 +8,7 @@ hero: hero2
       <div class="container">
 			{% for member in site.data.about %} {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %} {% if thecycle == 'odd' %}
 
-			<div class="columns">
+			<div class="columns spacing">
 				<div class="column half">
 					<img src="{{ member.obrazok }}" width="430">
 				</div>
@@ -20,7 +20,7 @@ hero: hero2
 
 			{% else %}
 
-			<div class="columns">
+			<div class="columns spacing">
 				<div class="column half">
 					<h3>{{ member.nazov }}</h3>
 					<p> {{ member.text }} </p>
@@ -34,19 +34,19 @@ hero: hero2
 
 		 <div class="columns spacing">
           <div class="column third">
-            <img src="/images/climb3.jpg" width="430" alt="Boulder">
+            <img src="/images/climb3.jpg" alt="Boulder">
 			<p></p>
-			 <img src="/images/horses.jpg" width="430" alt="Boulder">
+			 <img src="/images/horses.jpg" alt="Boulder">
           </div>
           <div class="column third">
-            <img src="/images/ferrata.jpg" width="430" alt="Boulder">
+            <img src="/images/ferrata.jpg" alt="Boulder">
 			<p></p>
-			<img src="/images/climb1.jpg" width="430" alt="Boulder">
+			<img src="/images/climb1.jpg" alt="Boulder">
           </div>
 		  <div class="column third">
-			 <img src="/images/climb2.jpg" width="430" alt="Boulder">
+			 <img src="/images/climb2.jpg" alt="Boulder">
 			 <p></p>
-			 <img src="/images/hook2.jpg" width="430" alt="Boulder">
+			 <img src="/images/hook2.jpg" alt="Boulder">
           </div>
         </div>
       </div>
