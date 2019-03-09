@@ -1,11 +1,10 @@
 ---
 layout: default
 title: O mne
+hero: hero2
 ---
 
     <div class="content">
-      <section class="hero2">
-      </section>
       <div class="container">
 			{% for member in site.data.about %} {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %} {% if thecycle == 'odd' %}
 

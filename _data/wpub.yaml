@@ -7,7 +7,7 @@
        text: 
           - bod: Momentálne využívam presne 3 layouty - jeden na úvodnú stránku (welcome), jeden pre podstránky zobrazené v menu - Domov, O mne, DevProfile, WPUB a Blog (default) a jeden pre články blogu (post).
           - bod: Welcome layout - vytvorený pre účely minimalistickosti - neobsahuje navigáciu, je tvorený len full-screenovým obrázkom, nadpisom a button-om pre vstup.
-          - bod: Default layout - obsahuje navigáciu v menu v hornej lište a taktiež svoj footer, je relatívne dobre customizovateľný.
+          - bod: Default layout - obsahuje navigáciu v menu v hornej lište, background obrázok s gradientom (pre plynulý prechod "do stratena") a taktiež svoj footer. Je relatívne dobre customizovateľný.
           - bod: Post layout - má špecifické rozloženie obsahu, typické pre články a teda - na vrchu sa nachádza názov článku (zarovnaným na ľavú stranu) spolu s dátumom vytvorenia (ten je zarovnaný na pravú stranu). Medzi samotným obsahom a názvom sa nachádzajú tagy - kľúčové slová daného článku. Nasleduje obsahu, za ktorým sa na konci vypíše, kto článok napísal (autor) a pripojí sa odkaz na pôvodný článok (z môjho osobného blogu). Tento layout dedí od defaultného, takže vidíme typické prvky - navigáciu v hornej lište a footer.
      - nazov: Použitie aspoň 5 premenných
        text:
@@ -18,6 +18,7 @@
           - bod: Pre výpis článkov v blogu používam aj post.excerpt na vyňatie ukážky textu z blogu a post.image na náhľad prvého obrázku článku. 
           - bod: Pri iterovaní dátovými súbormi (pri ich výpise) zas používam premenné member.nazov, member.text a member.obrazok na stránke O mne. Ďalej premenné member.jazyk, member.predmet a member.projekty na stránke DevProfile. A na stránke WPUB zas zadanie.nazov, bod.nazov a bod.text.
           - bod: Vďaka použitému plugin-u viem pristupovať aj k prvej fotografii článku blogu cez premennú {{ post.image }} (pri vypisovaní článkov podľa kategórií).
+          - bod: Stránky obsahujú premennú "hero", v ktorej nastavujem, aký background obrázok sa má pre príslušnú stránku v default layoute nastaviť - {{ page.hero }}.
      - nazov: Použitie kolekcií alebo dátových súborov
        text:
           - bod: Vo svojom riešení využívam 3 súbory vo formáte .yaml a to informácie o mne (obsahujú názov kapitoly, text a obrázok), informácie o projektoch riešených na jednotlivých predmetoch (obsahujú názov predmetu a text s riešenými projektami) a dokumentácia k webovému publikovaniu - práve tento súbor - ktorý dokonca obsahuje aj vnorené hodnoty do dvoch úrovní (zadanie má svoje body a splnenie tých bodov je popísané textom rozdeleným do viacerých bodov).
@@ -29,6 +30,7 @@
           - bod: Pracujem aj s podmienkou {% if thecycle == 'odd' %} //doSomething {% else %} //doSomethingElse {% endif %}, aby som vedela zameniť rozloženie stránky (pozíciu fotky a textu) - viď. predchádzajúci bod.
           - bod: "Z filtrov využívam samozrejme formátovanie dátumu {{ post.date | date: '%d.%m.%Y' }}."
           - bod: "Ďalším filtrom, ktorý používam, je {{ post.excerpt | truncate: 200 }} - ten oreže snippet článku blogu v prípade, že obsahuje viac ako 200 slov."
+          - bod: Nakoľko nechcem nastavovať gradient fullscreenovému obrázku na stránke Domov, tak používam podmienku, ktorá to ošetruje {% if page.hero != "hero1" %} //nenastavGradient {% endif %}.
      - nazov: Použitie aspoň jedného plugin-u
        text:
           - bod: "Využívam plugin jekyll-auto-image, ktorý má na starosti to, že vyberie prvú fotku z článku blogu a použije ju ako náhľad. Pri výpise článkov podľa kategórií tak stačí jednoducho pristúpiť k tejto fotke cez premennú {{ post.image }} a náhľad fotky sa zobrazí k snippetu článku. Inštrukcie k jeho inštalácii a použitiu sú dostupné tu: https://github.com/merlos/jekyll-auto-image."

@@ -45,6 +45,26 @@ img {
   height: auto;
 }
 
+.topnav {
+	text-align:center;
+    background: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.topnav a {
+	display:inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 div.container,
 div.small-container {
   margin: 0 auto;
@@ -70,7 +90,7 @@ footer {
   bottom: 0;
   width: 100%;
   color: #ffffff;
-  background-image: url('/images/gr.jpg');
+  background: #000;
 }
 
 section.hero {
@@ -104,10 +124,17 @@ section.heroW {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+ 
+.gradient {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    height: 200px;
+    margin-top: -200px;
+    position: relative;
+}
 
 section.hero2 {
   color: #fff;
-  background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 1)), url('/images/me.jpg');
+  background-image: url('/images/me.jpg');
   background-size: cover;
   min-height: 450px;
   max-height: auto;
@@ -115,7 +142,7 @@ section.hero2 {
 
 section.hero3 {
   color: #fff;
-  background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 1)), url('/images/dev.jpg');
+  background-image: url('/images/dev.jpg');
   background-size: cover;
   min-height: 450px;
   max-height: auto;
@@ -123,7 +150,7 @@ section.hero3 {
 
 section.hero4 {
   color: #fff;
-  background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 1)), url('/images/bg2.jpg');
+  background-image: url('/images/bg2.jpg');
   background-size: cover;
   min-height: 450px;
   max-height: auto;
@@ -131,7 +158,7 @@ section.hero4 {
 
 section.hero5 {
   color: #fff;
-  background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 1)), url('/images/a.jpg');
+  background-image: url('/images/a.jpg');
   background-size: cover;
   min-height: 450px;
   max-height: auto;
@@ -147,25 +174,19 @@ section.hero a,
 footer a {
   text-decoration: none;
   color: #ffffff;
-  background-image: url('/images/gr.jpg');
 }
 
 header,
 footer {
-  padding: 10px 0;
+  padding: 1px 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 nav.main-nav ul {
-  margin: 0;
   padding: 0;
   list-style: none;
-  float: right;
-}
-
-@media only screen and (max-width: 365px) {
-  nav.main-nav ul {
-    float: none;
-  }
+  width: fit-content;
+  margin: auto;
 }
 
 nav.main-nav li,
