@@ -7,7 +7,7 @@
        text: 
           - bod: Momentálne využívam presne 3 layouty - jeden na úvodnú stránku (welcome), jeden pre podstránky zobrazené v menu - O mne, DevProfile, WPUB a Blog (default) a jeden pre články blogu (post).
           - bod: Welcome layout - vytvorený pre účely minimalistickosti - neobsahuje navigáciu, je tvorený len full-screenovým obrázkom, nadpisom a button-om pre vstup.
-          - bod: Default layout - obsahuje navigáciu v menu v hornej lište, background obrázok s gradientom (pre plynulý prechod "do stratena") a taktiež svoj footer. Je relatívne dobre customizovateľný.
+          - bod: Default layout - obsahuje navigáciu v menu v hornej lište, background obrázok s gradientom (pre plynulý prechod "do stratena") a taktiež svoj footer.
           - bod: Post layout - má špecifické rozloženie obsahu, typické pre články a teda - na vrchu sa nachádza názov článku (zarovnaný na ľavú stranu) spolu s dátumom vytvorenia (ten je zarovnaný na pravú stranu). Medzi samotným obsahom a názvom sa nachádzajú tagy - kľúčové slová daného článku. Nasleduje obsahu, za ktorým sa na konci vypíše, kto článok napísal (autor) a pripojí sa odkaz na pôvodný článok (z môjho osobného blogu).
      - nazov: Použitie aspoň 5 premenných
        text:
