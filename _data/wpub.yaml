@@ -36,14 +36,3 @@
      - nazov: Použité štýly
        text:
           - bod: "Používam predovštkým CSS štýly, ktoré sú zadefinované v style.css. Kvôli buttonu na úvodnej stránke som použila aj Bootstrap 4.1.0. Nakoľko som s vytváraním webov nemala doteraz absolútne žiadnu skúsenosť, postupovala som v začiatkoch podľa tohto tutoriálu: https://css-tricks.com/building-a-jekyll-site-part-1-of-3/."
-- nazov: Zadanie 2
-  body:
-     - nazov: "Dokumentácia k 2. zadaniu"
-       text:
-          - bod: "To be continued :)"
-- nazov: Zadanie 3
-  body:
-     - nazov: "Dokumentácia k 3. zadaniu"
-       text:
-          - bod: "To be continued :)"
-     

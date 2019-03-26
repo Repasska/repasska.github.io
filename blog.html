@@ -7,6 +7,7 @@ hero: hero5
 <div class="content">
     <div class="container">
             {% for category in site.categories %}
+			{% if category[0] != 'wpub' %}
             <h3>{{ category[0] }}</h3> {% for post in category[1] %}
             <div class="columns">
                 <div class="column half">
@@ -19,6 +20,7 @@ hero: hero5
             </div>
 			<hr>
             {% endfor %} 
+			{% endif %} 
 			{% endfor %}
     </div>
 </div>

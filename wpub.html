@@ -5,17 +5,16 @@ hero: hero4
 ---
 
 <div class="content">
-    <div class="container">		
-		{% for zadanie in site.data.wpub %}
-            <h3> {{ zadanie.nazov }} </h3> 	
-			{% for bod in zadanie.body %}
-				<h5>{{ bod.nazov }}:</h5>
-				<ul>
-					{% for bod2 in bod.text %}
-					<li>{{ bod2.bod }}</li>
-					{% endfor %}
-            </ul>
+    <div class="container">
+	<h4> Tu sa nachádza dokumentácia k jednotlivým zadaniam: </h4>
+            {% for category in site.categories %}
+			{% if category[0] == 'wpub' %}
+			{% for post in category[1] %}
+			<ul>
+                    <h5> <li> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> » {{ post.date | date: '%d.%m.%Y' }} </li> </h5>
+			</ul>
             {% endfor %} 
-		{% endfor %}
+			{% endif %} 
+			{% endfor %}
     </div>
 </div>
